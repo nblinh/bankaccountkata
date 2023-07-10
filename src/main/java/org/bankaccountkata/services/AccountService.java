@@ -30,11 +30,11 @@ public class AccountService {
         account.addTransaction(transaction);
     }
 
-    public void printStatement(Account account){
+    public void printStatement(Account account) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         System.out.println("Operation   Date    Amount  Balance");
-        for(Transaction transaction: account.getTransactions()){
-            System.out.println(transaction.getTransactionType()+" "+formatter.format(transaction.getDate())+" "+transaction.getAmount()+" "+transaction.getBalance());
+        for (Transaction transaction : account.getTransactions()) {
+            System.out.println(transaction.getTransactionType() + " " + formatter.format(transaction.getDate()) + " " + transaction.getAmount() + " " + transaction.getBalance());
         }
     }
 }

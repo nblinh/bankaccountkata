@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 public class AccountServiceTest {
     AccountService accountService = AccountService.getInstance();
-    private final PrintStream standardOut = System.out;
     private static final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 

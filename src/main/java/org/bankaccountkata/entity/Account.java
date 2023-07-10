@@ -8,9 +8,9 @@ public class Account {
 
     private List<Transaction> transactions;
 
-    public Account(double balance){
-        this.balance=balance;
-        transactions=new ArrayList<>();
+    public Account(double balance) {
+        this.balance = balance;
+        transactions = new ArrayList<>();
     }
 
     public double getBalance() {
@@ -25,7 +25,7 @@ public class Account {
         return transactions;
     }
 
-    public void addTransaction(Transaction transaction){
+    public void addTransaction(Transaction transaction) {
         transactions.add(transaction);
     }
 
